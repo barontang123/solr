@@ -39,7 +39,7 @@ public class SolrUtil {
         SolrInputDocument document = new SolrInputDocument();
         document.addField("id", "3");
         document.addField("name", "周星驰");
-        document.addField("description", "喜剧之王");
+        document.addField("description", "喜剧之王厉害");
         HttpSolrClient solr = new HttpSolrClient.Builder(SOLR_URL).withConnectionTimeout(10000)
                 .withSocketTimeout(60000).build();
         solr.add(document);
